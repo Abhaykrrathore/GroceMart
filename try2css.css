@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+ 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #7EC855;
+  font-family: 'Roboto', sans-serif;
+}
+.GroceMart {
+  color: #5E6977;
+  font-size: 40px;
+  font-weight: 400;
+  margin-top:30px;
+  text-align:center;
+}
+.shopping-cart {
+  width: 1260px;
+  height: 600px;
+  margin: 8px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.myTable { 
+/*  background-color:#FFFFE0;*/
+  border-collapse:collapse;
+  color:black;
+  height: 400px;
+  width: 1260px;
+}
+.myTable th { 
+  width:50%;
+  font:bold 18px/1.1em Arial, Helvetica, Sans-Serif;
+  text-shadow: 1px 1px 4px black;
+  letter-spacing:0.3em;
+  background-color:#BDB76B;
+  color:white; 
+}
+.myTable td, .myTable th { 
+  padding:1px;
+  border:1px solid #BDB76B; 
+}
+.myTable td { 
+  line-height:1.5em;
+}
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+.instructions {
+	margin: 10px;
+	margin-left: 30px;
+	margin-right:30px;
+	text-align: justify;
+	padding: 20px 30px;
+    font-family:Georgia, Garamond, Serif; 	
+}
+.item {
+  padding: 20px 30px;
+  height: 100px;
+  display: flex;
+}
+ 
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+.itemName {
+  margin-left:30px;
+  font-size:18px;
+}
+.inventory {
+  border : 1px solid green;
+  padding: 7px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+  margin-right:30px;
+  margin-left:210px;
+}
+.image {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+ 
+Let’s add some basic style to  product name and description.
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+ 
+.description span {
+  display: block;
+  color: #43484D;
+  font-weight: 400;
+}
+.description span:first-child {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+  font-size: 14px;
+}
+.price {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 250px;
+}
+ 
+.price span {
+  display: block;
+  color: #43484D;
+  font-weight: 400;
+}
+.price span:first-child {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #86939E;
+}
+.price span:last-child {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.quantity {
+
+  width: 200px;
+  font-size:16px;
+}
+@media (max-width: 800px) {
+  .shopping-cart {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img {
+    width: 50%;
+  }
+  .image,
+  .quantity,
+  .description {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
